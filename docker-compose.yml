@@ -1,0 +1,9 @@
+version: '3.2'
+
+services:
+  nginx:
+    ports:
+      - 443:443
+    build:
+      context: .
+      dockerfile: Dockerfile

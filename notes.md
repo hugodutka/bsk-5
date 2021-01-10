@@ -34,5 +34,5 @@ openssl req -new -key prac.gfb.intra.key -out prac.gfb.intra.csr
 ### Generate a Certificate
 
 ```bash
-openssl x509 -req -days 540 -in prac.gfb.intra.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out prac.gfb.intra.crt
+openssl x509 -req -days 540 -in prac.gfb.intra.csr -CA ca.crt -CAkey ca.key -CAcreateserial -sha256 -extfile v3.ext -out prac.gfb.intra.crt
 ```
